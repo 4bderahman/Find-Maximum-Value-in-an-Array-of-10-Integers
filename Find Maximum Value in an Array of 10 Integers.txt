@@ -1,0 +1,29 @@
+ALGORITHME TrouverMaximum
+
+VARIABLES 
+
+    Tableau T(10) : Entier
+    i : Entier
+    max : Entier
+
+DEBUT
+
+   
+    ecrire("Entrez le premier entier : ")
+    lire(T(0))
+    max <-- T(0)
+
+    POUR i <-- 1 à 9 pas 1 FAIRE
+        ecrire("Entrez l'entier pour la position ", i+1, " : ")
+        lire(T(i))
+
+        SI T(i) > max ALORS
+            max <-- T(i)
+
+        FIN SI
+    FIN POUR
+
+   
+    ecrire("Le maximum des éléments du tableau est : ", max)
+
+FIN
